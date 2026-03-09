@@ -3,7 +3,7 @@
 /* Pseudo-class that targets the root element <html> */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 1.3;
   font-weight: 400; /* normal */
 
   color-scheme: light dark;
