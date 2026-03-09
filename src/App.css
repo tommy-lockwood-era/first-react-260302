@@ -5,6 +5,14 @@
   text-align: center;
 }
 
+header {
+  background-color: purple;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
