@@ -1,0 +1,98 @@
+/* element selector - very low specificity 1 */
+section {
+  background-color: limegreen !important;
+}
+
+/* id selector - high specificity 100 */
+#section-423897 {
+  /* background-color: #8a8a8a; */
+}
+
+/* element + class selector - a little more than regular specificity */
+section.router {
+  background-color: #abcdef;
+}
+
+/* class selector - regular specificity 10 */
+.router {
+  background-color: #f1f1e8;
+  padding: 1.25rem; /* 20px */
+  column-gap: 1rem; /* 16px */
+
+  & div {
+    background-color: white;
+    padding: 1.25rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  & a:hover {
+    /* hover pseudo class */
+    color: aqua;
+    text-decoration: none;
+  }
+
+  & a::after {
+    content: "=>";
+    padding: 0px 4px 0px;
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-color: SteelBlue;
+    border-radius: 100px;
+  }
+}
+
+/* .router * {
+        display: flex;
+      } */
+
+.router-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.router-flex {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+
+  & div {
+    /* nested selector */
+    width: 50%;
+  }
+}
+
+.router-flex div {
+  width: 50%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.nav {
+  max-width: 300px;
+  color: SteelBlue;
+  /* border-style: solid;
+        border-color: limegreen;
+        border-width: 5px; */
+  /* background-color:lightgray; */
+  padding: 5px;
+  margin: 15px;
+}
+
+nav {
+  color: SteelBlue;
+}
